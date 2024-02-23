@@ -77,6 +77,10 @@ commands_admin = [
         command='start',
         description='Start/restart bot'
     ),
+    BotCommand(
+        command='add_product',
+        description='add new product'
+    )
 ]
 
 commands_user = [

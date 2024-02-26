@@ -35,3 +35,9 @@ def get_product_list(cat_id: int) -> InlineKeyboardMarkup:
         ])
     kb_products = InlineKeyboardMarkup(inline_keyboard=rows)
     return kb_products
+
+
+left_right_k = InlineKeyboardMarkup(inline_keyboard=[
+    [InlineKeyboardButton(text="⬅️",callback_data="left"),
+     InlineKeyboardButton(text="➡️",callback_data="right")]
+])
